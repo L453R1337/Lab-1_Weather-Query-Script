@@ -4,7 +4,7 @@ CITY=$1
 
 echo "<HTML><BODY>"
 
-curl wttr.in/Perm?format=j1 | jq '.["current_condition"][0] | .temp_C,.humidity'
+curl -s https://wttr.in/${CITY}?format=j1 | jq '.["current_condition"][0] | .temp_C,.humidity'
 
 date
 
