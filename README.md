@@ -37,5 +37,5 @@ jq
 Скрипт настроен на выполнение каждую минуту с помощью cron. Пример строки в crontab:
 
 * * * * * /home/admin/weather.sh PEE > /var/www/html/index.nginx-debian.html 2>> /home/admin/weather.err
-        * 
+      
 Этот подход позволяет обновлять HTML-страницу с погодными данными в реальном времени.
